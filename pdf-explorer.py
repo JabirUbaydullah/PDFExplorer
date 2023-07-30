@@ -133,7 +133,7 @@ def main():
                 st.session_state["embeddings"],
                 st.session_state["paragraphs"],
                 st.session_state["llm"],
-            ) = process_pdf(file_name.name)
+            ) = process_pdf(file_name)
 
         form = st.form(key="my_form")
         query = form.text_input(
